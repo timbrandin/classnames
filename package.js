@@ -2,12 +2,12 @@ Package.describe({
   name: 'timbrandin:classnames',
   version: '0.0.1',
   // Brief, one-line summary of the package.
-  summary: '',
+  summary: 'classNames in Meteor for Blaze-React',
   // URL to the Git repository containing the source code for this package.
-  git: '',
+  git: 'https://github.com/timbrandin/classnames',
   // By default, Meteor will default to using README.md for documentation.
   // To avoid submitting documentation, set this field to null.
-  documentation: 'README.md'
+  documentation: null
 });
 
 Npm.depends({
@@ -30,11 +30,4 @@ Package.onUse(function(api) {
   ], 'client');
 
   api.export('classNames');
-});
-
-Package.onTest(function(api) {
-  api.use('ecmascript');
-  api.use('tinytest');
-  api.use('classnames');
-  api.addFiles('classnames-tests.js');
 });
